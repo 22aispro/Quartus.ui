@@ -1,16 +1,23 @@
-# Introducing Quartus.UI, the first UI library for TSST
+# Quartus
 
-A small console UI library for TSST.
+Quartus is a general-purpose standard library for TSST.
+
+It includes helpers for:
+
+- Math
+- Text
+- Logic
+- Console UI
 
 ## Install
 
-Add this to your `tsst.json`:
+Add Quartus to your `tsst.json`:
 
 ```json
 {
   "name": "MyApp",
   "version": "0.1.0",
   "dependencies": {
-    "ui": "github:22aispro/Quartus.ui"
+    "quartus": "github:22aispro/Quartus"
   }
 }
