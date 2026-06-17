@@ -1,1 +1,53 @@
+fcn q_not (cre_bool value) -> bool {
+    if value {
+        return false;
+    }
 
+    return true;
+}
+
+fcn q_and (cre_bool a, cre_bool b) -> bool {
+    if a {
+        if b {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+fcn q_or (cre_bool a, cre_bool b) -> bool {
+    if a {
+        return true;
+    }
+
+    if b {
+        return true;
+    }
+
+    return false;
+}
+
+fcn q_bool_text (cre_bool value) -> str {
+    if value {
+        return "true";
+    }
+
+    return "false";
+}
+
+fcn q_yes_no (cre_bool value) -> str {
+    if value {
+        return "yes";
+    }
+
+    return "no";
+}
+
+fcn q_enabled_disabled (cre_bool value) -> str {
+    if value {
+        return "enabled";
+    }
+
+    return "disabled";
+}
