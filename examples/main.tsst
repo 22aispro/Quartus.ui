@@ -1,1 +1,43 @@
+use "../ui.tsst";
 
+pub fcn main () {
+    ui_app_start("TSST UI Demo");
+
+    ui_title("Dashboard");
+
+    ui_info("Loading user data");
+    ui_success("User loaded");
+
+    ui_card("Profile", "John Doe");
+
+    ui_label("Name", "John Doe");
+    ui_number("Age", 37);
+    ui_bool("Admin", true);
+
+    ui_space();
+
+    ui_subtitle("Todo List");
+
+    cre_arr todos = [
+        "Build TSST",
+        "Make package manager",
+        "Create UI library",
+    ];
+
+    ui_list(todos);
+
+    ui_space();
+
+    ui_subtitle("Progress");
+
+    ui_progress(3, 10);
+    ui_progress(7, 10);
+    ui_progress(10, 10);
+
+    ui_space();
+
+    ui_checkbox("Docs website", true);
+    ui_checkbox("VSIX package", false);
+
+    ui_app_end();
+}
